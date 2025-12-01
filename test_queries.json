@@ -1,0 +1,14 @@
+{
+  "queries": [
+    {"query":"How do I add a dependent to my health insurance?","expected":"HR"},
+    {"query":"My laptop won't boot. Where do I submit a ticket?","expected":"Tech"},
+    {"query":"What's the expense policy for travel under $500?","expected":"Finance"},
+    {"query":"How to update my emergency contact?","expected":"HR"},
+    {"query":"Can I get a copy of last quarter's P&L?","expected":"Finance"},
+    {"query":"VPN is disconnecting frequently","expected":"Tech"},
+    {"query":"What are the steps for parental leave?","expected":"HR"},
+    {"query":"How do I request software purchase approval?","expected":"Finance"},
+    {"query":"I think I found a security vulnerability — who to inform?","expected":"Tech"},
+    {"query":"Which forms do I need for tuition reimbursement?","expected":"HR"}
+  ]
+}
