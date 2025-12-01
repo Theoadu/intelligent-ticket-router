@@ -1,0 +1,191 @@
+[
+  {
+    "query": "How do I add a dependent to my health insurance?",
+    "expected": "HR",
+    "classification": {
+      "category": "Other",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "Sorry, I couldn't determine the correct department. Please provide more context.",
+    "eval": {
+      "score": 1,
+      "rationale": "The response does not answer the user's query about adding a dependent to health insurance and fails to provide any relevant information or guidance. It also does not utilize any sources, effectively rendering it unhelpful.",
+      "issues": [
+        "Does not answer the question",
+        "Lacks relevant information",
+        "No citations or sources provided"
+      ]
+    }
+  },
+  {
+    "query": "My laptop won't boot. Where do I submit a ticket?",
+    "expected": "Tech",
+    "classification": {
+      "category": "Tech",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "If your laptop won't boot, you should open a ticket with IT Support.",
+    "eval": {
+      "score": 8,
+      "rationale": "The response accurately directs the user to open a ticket with IT Support, which is relevant to the query about the laptop not booting. However, it could be improved by including specific instructions on how to submit the ticket or where to find the IT Support contact.",
+      "issues": [
+        "Lacks specific instructions for submitting a ticket.",
+        "No contact information for IT Support provided."
+      ]
+    }
+  },
+  {
+    "query": "What's the expense policy for travel under $500?",
+    "expected": "Finance",
+    "classification": {
+      "category": "Finance",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "The expense policy for travel under $500 requires manager pre-approval, and the airfare must be in economy class. Additionally, expenses must be submitted via the expense portal with attached receipts. The manager will approve or reject the expenses within 5 working days, and finance will process reimbursements on the next payroll run.",
+    "eval": {
+      "score": 8,
+      "rationale": "The response accurately captures the main points of the expense policy for travel under $500, including the need for manager pre-approval and the requirement for receipts. However, it should ideally reference specific sources or clarify that it summarizes them, as there is a lack of citation details to assure comprehensive backing of the claims made.",
+      "issues": [
+        "Lacks specific citations from the provided sources",
+        "Could provide more clarity on which specific source supports each part of the policy"
+      ]
+    }
+  },
+  {
+    "query": "How to update my emergency contact?",
+    "expected": "HR",
+    "classification": {
+      "category": "Other",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "Sorry, I couldn't determine the correct department. Please provide more context.",
+    "eval": {
+      "score": 1,
+      "rationale": "The proposed answer does not address the user's query at all and asks for more context without providing any relevant information or direction on how to update an emergency contact. No sources were cited, and it fails to provide any assistance to the user.",
+      "issues": [
+        "Completely irrelevant response",
+        "No guidance on updating emergency contact",
+        "No sources or helpful information provided"
+      ]
+    }
+  },
+  {
+    "query": "Can I get a copy of last quarter's P&L?",
+    "expected": "Finance",
+    "classification": {
+      "category": "Other",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "Sorry, I couldn't determine the correct department. Please provide more context.",
+    "eval": {
+      "score": 2,
+      "rationale": "The response does not address the user's request for a copy of the P&L and instead asks for more context without providing any useful guidance. It lacks relevance, accuracy, and completeness regarding the initial query.",
+      "issues": [
+        "The answer does not attempt to assist the user in obtaining the P&L.",
+        "It fails to provide any relevant information or guidance on how to proceed.",
+        "It does not specify any departments or contacts that could help with the request."
+      ]
+    }
+  },
+  {
+    "query": "VPN is disconnecting frequently",
+    "expected": "Tech",
+    "classification": {
+      "category": "Tech",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "I don't know.",
+    "eval": {
+      "score": 1,
+      "rationale": "The answer provided is completely unhelpful, offering no information or assistance regarding the user's issue with frequent VPN disconnections. It does not address the query at all and fails to utilize the provided sources effectively.",
+      "issues": [
+        "No attempt to answer the query",
+        "Source material was not referenced or utilized",
+        "Lacks any relevant information or context for the user's problem"
+      ]
+    }
+  },
+  {
+    "query": "What are the steps for parental leave?",
+    "expected": "HR",
+    "classification": {
+      "category": "HR",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "The steps for parental leave (paternity leave) are as follows:\n\n1. Fill the leave application form on the HR portal.\n2. Attach required documentation (birth certificate + paternity declaration).\n3. Submit to immediate manager for approval.\n4. HR completes processing within 3 business days.",
+    "eval": {
+      "score": 7,
+      "rationale": "The proposed answer outlines steps for parental (paternity) leave in a structured manner, but it lacks specific details about the required documentation and approval processes that may vary by company policy. Additionally, while sourced from HR documents, the citations are not precise enough to validate the claims in the answer.",
+      "issues": [
+        "Lacks specific details on what documents are needed (e.g., format, any additional forms).",
+        "Does not clarify if there are eligibility criteria or deadlines for submitting the leave application.",
+        "Citations are too vague and do not refer to specific policies or guidelines."
+      ]
+    }
+  },
+  {
+    "query": "How do I request software purchase approval?",
+    "expected": "Finance",
+    "classification": {
+      "category": "Other",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "Sorry, I couldn't determine the correct department. Please provide more context.",
+    "eval": {
+      "score": 1,
+      "rationale": "The response does not provide any helpful information regarding requesting software purchase approval and simply asks for more context without offering guidance. This indicates a complete lack of relevance and utility in addressing the user's query.",
+      "issues": [
+        "No useful information provided",
+        "Does not address the request for software purchase approval",
+        "Lacks direction on how to proceed with the request"
+      ]
+    }
+  },
+  {
+    "query": "I think I found a security vulnerability \u2014 who to inform?",
+    "expected": "Tech",
+    "classification": {
+      "category": "Other",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "Sorry, I couldn't determine the correct department. Please provide more context.",
+    "eval": {
+      "score": 1,
+      "rationale": "The response does not provide any helpful information or direction regarding the user's query and simply asks for more context without further assistance.",
+      "issues": [
+        "No relevant information provided",
+        "Lack of direction on how to report a security vulnerability",
+        "Failure to address the user's query effectively"
+      ]
+    }
+  },
+  {
+    "query": "Which forms do I need for tuition reimbursement?",
+    "expected": "HR",
+    "classification": {
+      "category": "Other",
+      "confidence": 0.6,
+      "reasons": "Fallback keyword rule matched: the JSON object must be str, bytes or bytearray, not dict"
+    },
+    "answer": "Sorry, I couldn't determine the correct department. Please provide more context.",
+    "eval": {
+      "score": 1,
+      "rationale": "The response does not answer the user's query about the forms needed for tuition reimbursement and fails to provide any relevant information or guidance.",
+      "issues": [
+        "Response does not address the query",
+        "No relevant information provided",
+        "Lack of source citations or references",
+        "Unhelpful in seeking further context"
+      ]
+    }
+  }
+]

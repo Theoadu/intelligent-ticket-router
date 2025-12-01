@@ -10,14 +10,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from langchain_classic.chains import LLMChain
-from langchain_classic import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-# from langchain_core.callbacks.manager import CallbackManager
-# from langchain_core.callbacks.base import CallbackManager as CM
 
 from agents.hr_agent import HRAgent
 from agents.tech_agent import TechAgent
 from agents.finance_agent import FinanceAgent
+
+from langfuse.langchain import CallbackHandler
+ 
+langfuse_handler = CallbackHandler()
 
 # Optional Langfuse tracer integration
 try:
@@ -47,6 +49,7 @@ CLASSIFIER_PROMPT = PromptTemplate(
     ),
 )
 
+config={"callbacks": [langfuse_handler]}
 
 class Orchestrator:
     def __init__(self, enable_langfuse: bool = False):
@@ -58,23 +61,12 @@ class Orchestrator:
         self.tech_agent = TechAgent()
         self.finance_agent = FinanceAgent()
         self.enable_langfuse = enable_langfuse and LANGFUSE_AVAILABLE
-        if self.enable_langfuse:
-            # Initialize Langfuse client using env variables if not already initialized
-            lf_public = os.getenv("LANGFUSE_PUBLIC_KEY")
-            lf_secret = os.getenv("LANGFUSE_SECRET_KEY")
-            lf_host = os.getenv("LANGFUSE_HOST")
-            # safe init
-            Langfuse(
-                api_key=lf_secret, tracker_url=lf_host
-            )  # depending on SDK; this is best-effort
-            self.tracer = LangfuseTracer()
-        else:
-            self.tracer = None
+        self.tracer = None
 
     def classify(self, query: str):
         # run classification chain
         try:
-            resp = self.chain.run({"query": query})
+            resp = self.chain.invoke({"query": query}, config=config)
             # The response should be a JSON object. Try to parse.
             parsed = json.loads(resp)
             return parsed
