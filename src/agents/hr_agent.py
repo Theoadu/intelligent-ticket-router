@@ -19,5 +19,5 @@ class HRAgent:
 
     def run(self, query: str, chat_history=None):
         chat_history = chat_history or []
-        result = self.chain({"question": query, "chat_history": chat_history})
+        result = self.chain.invoke({"question": query, "chat_history": chat_history})
         return result
