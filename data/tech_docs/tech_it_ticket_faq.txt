@@ -1,0 +1,11 @@
+IT Support FAQ
+
+Q: My laptop is running slow. What should I do?
+A: Restart the laptop, ensure available disk space, and close memory-heavy applications. 
+If the issue persists, submit a support ticket.
+
+Q: How do I reset my company email password?
+A: Use the Password Reset Portal. If locked out, contact IT Support for identity verification.
+
+Q: What should I do if I suspect a phishing email?
+A: Do not click on any links. Forward the email to security@company.com immediately.

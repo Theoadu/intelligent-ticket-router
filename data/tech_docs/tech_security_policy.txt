@@ -1,0 +1,16 @@
+Information Security Policy
+
+1. Password Requirements
+Minimum 12 characters, including uppercase, lowercase, number, and symbol.
+
+2. Two-Factor Authentication
+Mandatory for all internal tools and admin dashboards.
+
+3. Device Management
+Only IT-approved devices may access production systems.
+
+4. Reporting Incidents
+Security incidents must be reported within 1 hour to the security team.
+
+5. Data Handling
+Confidential data must be stored only on encrypted drives and never emailed externally.

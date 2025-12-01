@@ -1,0 +1,13 @@
+Corporate VPN Usage Guide
+
+The company requires VPN usage for accessing internal systems from remote networks.
+
+Installation Steps:
+1. Download the VPN client from the internal software portal.
+2. Authenticate using Single Sign-On (SSO).
+3. Connect to the “CORP-SECURE” server.
+
+Troubleshooting:
+- Ensure internet connectivity.
+- If connection fails repeatedly, restart the VPN client.
+- Open a ticket with error logs attached for escalation.

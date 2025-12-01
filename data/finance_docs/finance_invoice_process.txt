@@ -1,0 +1,14 @@
+Invoice Processing Workflow
+
+Incoming Invoices:
+- Received via accounts@company.com
+- Logged into the Finance Tracker
+- Assigned to appropriate department for approval
+
+Approval SLA:
+- Standard invoices: 5 business days
+- High-value invoices (> $20,000): 10 business days
+
+Payments:
+- Processed every Wednesday and Friday
+- Delayed payments may occur during monthly close

@@ -36,6 +36,7 @@ venv.bak/
 
 .chromadb
 _agents
+other
 # Environment variables
 .env
 .env.*

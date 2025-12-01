@@ -1,0 +1,10 @@
+Standard Desktop Setup
+
+All new laptops are configured with:
+- OS image version 4.8
+- Endpoint protection agent
+- Developer toolchain (Node.js, Python, Docker)
+- SSO authentication modules
+
+Employees must not install unapproved software. 
+Unauthorized installations may be automatically removed by the device security agent.

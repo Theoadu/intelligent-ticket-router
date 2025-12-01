@@ -1,0 +1,13 @@
+On-Call Engineer Runbook
+
+Severity Levels:
+- SEV1: Major outage impacting customers. Respond within 5 minutes.
+- SEV2: Partial degradation. Respond within 15 minutes.
+- SEV3: Minor bug or annoyance. Respond within business hours.
+
+Escalation Steps:
+1. Acknowledge alert.
+2. Review alert details and logs.
+3. Mitigate immediate customer-facing impact.
+4. Notify engineering leadership for SEV1/SEV2.
+5. Document root cause analysis in the incident tracker.
