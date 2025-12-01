@@ -1,0 +1,3 @@
+Tech quick notes:
+- Request access via the access management portal.
+- VPN: use company VPN with MFA.

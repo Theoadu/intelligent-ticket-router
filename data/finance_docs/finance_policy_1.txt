@@ -1,0 +1,10 @@
+Finance: Expense & Reimbursement Policy
+- Receipts required for all expenses > $10.
+- Company credit card: submit reconciliation monthly.
+- Travel expense: airfare must be economy class; manager pre-approval required.
+- Payroll changes: banking updates must be sent to payroll@company.com with verification document.
+- Budget approvals: small expenses < $1,000 by manager; > $1,000 require finance approval.
+Procedure:
+1. Submit expenses via expense portal, attach receipts.
+2. Manager approves or rejects within 5 working days.
+3. Finance processes reimbursements on next payroll run.

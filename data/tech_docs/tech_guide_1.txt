@@ -1,0 +1,8 @@
+Tech: User Devices and Support
+- Standard OS: Windows 11 for corporate laptops; Linux for servers.
+- Password reset: use SSO portal. If SSO is unavailable, open a ticket with IT Support with identification.
+- Production logs: stored in central ELK cluster under /var/log/app/production.
+- Deployment: use our CI pipeline (Jenkins) with branch 'main' protected.
+Common troubleshooting:
+- Slow laptop: check background processes (Task Manager), disk health (chkdsk), and update drivers.
+- Missing packages in Python: run `pip install -r requirements.txt` and use virtualenv.
