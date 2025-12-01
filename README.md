@@ -147,10 +147,8 @@ intelligent-ticket-router/
 │   │   ├── tech_agent.py         # Technical support agent
 │   │   ├── finance_agent.py      # Finance support agent
 │   │   └── orchestrator.py       # Query classifier and router (alternate)
-│   ├── document_pipeline.py      # Document loading and indexing
 │   ├── ingest.py                 # Batch ingestion with synthesis
 │   ├── orchestrator.py           # Main orchestrator implementation
-│   ├── multi_agent_system.py     # High-level system orchestration
 │   ├── run_system.py             # CLI runner with test execution
 │   ├── evaluator.py              # Response quality evaluator
 ├── main.py                        # Main entry point for queries
