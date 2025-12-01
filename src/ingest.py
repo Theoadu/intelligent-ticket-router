@@ -64,13 +64,6 @@ def chunk_texts(texts: List[str], chunk_size=800, chunk_overlap=100):
 
 def build_chroma_client(persist_directory=CHROMA_PERSIST_DIR):
     os.makedirs(persist_directory, exist_ok=True)
-    # client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=persist_directory))
-    # client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=persist_directory))
-    # client = Chroma(
-    #     persist_directory=persist_directory,
-    #     embedding_function=embeddings,
-    #     collection_name="hr_faq"
-    # )
     client = chromadb.PersistentClient(path=persist_directory)
     return client
 
